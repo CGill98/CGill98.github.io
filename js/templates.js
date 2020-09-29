@@ -20,7 +20,7 @@ switch (page_id) {
                 <ul class="generic-list">
                     <li>Plan and Do stores your data on your device</li>
                     <li>Plan and Do does not store your data anywhere else</li>
-                    <li>Plan and Do does not use your data for</li>
+                    <li>Plan and Do does not sell your data to 3rd parties</li>
                     <li>Plan and Do does not use personalised adds</li>
                 </ul>
             </div>
