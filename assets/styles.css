@@ -1,0 +1,178 @@
+* {
+    font-family: Helvetica;
+    margin: 0px;
+}
+
+html {
+    width: 100%;
+    height: 100%; 
+}
+
+/* width 99% html */
+body {
+    /*
+    background-image: url('./background-images/vaporwaveback.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;*/
+    background-color: #212437;
+    width: 99%;
+    height: 100%;
+}
+/*width 406.59px*/
+h1 {
+    color: white;
+    display: inline-block;
+    margin: auto;
+    /*margin: 0.5%;*/
+    /*margin-left: 8%;
+*/
+    height: 50%;
+}
+
+h2 {
+    color: white;
+}
+
+/* width 99% html */
+.header-wrapper {
+    width: 100%;
+    min-height: 12%;
+    padding: 2px;
+    /*background-image: radial-gradient(rgb(150, 0, 50), rgb(200, 0, 150));*/
+    border-bottom: white;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+/* width 84.15% html */
+.header-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+.main-content {
+    width: 85%;
+    margin: auto;
+    margin-top: 0px;
+    height: 75%;
+    display: block;
+    background-color: #313447;
+
+}
+
+.footer-wrapper {
+    position: absolute;
+    width: 99%;
+    min-height: 8%;
+    padding: 2px;
+    /*background-image: radial-gradient(rgb(150, 0, 50), rgb(200, 0, 150));*/
+    border-top: white;
+    border-top-width: 2px;
+    border-top-style: solid;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.footer-list {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    padding: 0px;
+    list-style-type: none;
+    /*justify-content: space-around;*/
+}
+
+.footer-list li {
+    display: inline-block;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+
+.header-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+.screenshot {
+    height: 50%;
+}
+/* width 42.075 % html */
+.project-list {
+    margin: auto;
+    display: inline-block;
+    width: 50%;
+    /*justify-content: space-around;*/
+}
+
+.project-list li {
+    display: inline-block;
+    color: white;
+    margin-right: 3%;
+    
+}
+
+.project-list-last {
+    display: inline-block;
+    color: white;
+    margin-right: 0% !important;
+}
+
+.project-list li a, .footer-list li a {
+    font-size: 24px;
+    color: white; 
+    text-decoration: none;
+    
+}
+
+.generic-list {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.generic-list li {
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 1%;
+    list-style-type: none;
+}
+
+/*main content text*/
+.mc-text {
+    font-size: 16px;
+    font-weight: normal;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        color: white;
+        display: block;
+        margin: auto;
+        /*margin: 0.5%;*/
+        /*margin-left: 8%;
+    */
+        height: 50%;
+    }
+    .project-list {
+        margin: auto;
+        display: block;
+        width: 50%;
+        /*justify-content: space-around;*/
+    }
+} 
