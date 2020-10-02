@@ -15,8 +15,16 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;*/
-    background-color: #212437;
+    /*background-color: #212437;*/
     width: 99%;
+    height: 100%;
+}
+
+#canvas {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    width: 100%;
     height: 100%;
 }
 /*width 406.59px*/
@@ -62,8 +70,8 @@ h2 {
     margin-top: 0px;
     height: 75%;
     display: block;
-    background-color: #313447;
-
+    /*background-color: #313447;
+    */
 }
 
 .footer-wrapper {
@@ -129,12 +137,32 @@ h2 {
     margin-right: 0% !important;
 }
 
+.selected-link {
+    color: #616477 !important; 
+}
+
 .project-list li a, .footer-list li a {
     font-size: 24px;
     color: white; 
     text-decoration: none;
     
 }
+
+@keyframes link-animation{
+    from {color: white;
+          font-size: 24px;}
+    to {color: #616477;
+        font-size: 23px;}
+}
+
+.project-list li a:hover, .footer-list li a:hover {
+    color: #616477; 
+    font-size: 23px;
+    animation: link-animation;
+    animation-duration: 0.3s;
+}
+
+
 
 .generic-list {
     margin-left: auto;
