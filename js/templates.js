@@ -17,6 +17,43 @@ switch (page_id) {
         home_prepend = ""
         pages_prepend = "./pages/"
         proj_link_class.index = "selected-link"
+        main_content_inside = 
+        `
+        <div id='myCarousel' class='carousel-container carousel slide' data-ride='carousel'>
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+            </ol>
+
+            <div class="carousel-inner carousel-center">
+                <div class="carousel-item active">
+                    <div class="project-name-container">
+                        <h2 class="project-name">ChartJS Implementation</h2>
+                    </div>
+                    <img class="screenshot" src="./assets/images/chartjs.png" width="600">
+                </div>    
+
+                <div class="carousel-item">
+                    <div class="project-name-container">
+                        <h2>Plan and Do</h2>
+                    </div>
+                    <img class="screenshot" src="./assets/images/screenshots/phone delete.png" width="200">
+                </div>    
+            </div>
+
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev" role="button">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next" role="button">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+        `
         break;
     case "plan-and-do":
         proj_link_class.plan_and_do = '"selected-link"'
@@ -52,8 +89,8 @@ const header_wrapper =
         <ul class="project-list">
             <li><a class=${proj_link_class.index} href="${home_prepend}index.html">Home</a></li>
             <li><a class=${proj_link_class.plan_and_do} href="${pages_prepend}plan-and-do.html">Plan and Do</a></li>
-            <li><a href="#">Plan and Do</a></li>
-            <li class="project-list-last"><a href="#">Plan and Do</a></li>
+            <li><a href="#">Aprender Espanol</a></li>
+            <li class="project-list-last">See More</li>
         </ul>
     </div>
 </div>
@@ -77,6 +114,13 @@ const footer_wrapper =
     </div>
 </div>
 `
+const t1 = new Date()
 $('body').prepend(footer_wrapper)
 $('body').prepend(main_content)
 $('body').prepend(header_wrapper)
+const t2 = new Date()
+
+console.log(t1.getTime())
+console.log(t2.getTime())
+console.log(`miliseconds: ${t2.getTime() - t1.getTime()}`)
+
