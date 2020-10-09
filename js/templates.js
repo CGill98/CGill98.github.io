@@ -30,7 +30,7 @@ switch (page_id) {
                     <div class="project-name-container">
                         <h2 class="project-name">ChartJS Implementation</h2>
                     </div>
-                    <img class="screenshot" src="./assets/images/chartjs.png" width="600">
+                    <img class="screenshot" src="./assets/images/chartjs.PNG" width="600">
                 </div>    
 
                 <div class="carousel-item">
