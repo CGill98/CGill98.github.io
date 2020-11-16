@@ -11,7 +11,10 @@ let proj_link_class = { //project link classes
 
 }
 
-
+const chartjsDims = [1132, 619]
+const plannerDims = [1080, 2220]
+//600 = 1600 * x ,x = 600/1600 = 6/16 = 3/8 = 0.375
+const carouselDims = [chartjsDims, plannerDims]
 switch (page_id) {
     case "index":
         home_prepend = ""
@@ -30,15 +33,15 @@ switch (page_id) {
                     <div class="project-name-container">
                         <h2 class="project-name">ChartJS Implementation</h2>
                     </div>
-                    <img class="screenshot" src="./assets/images/chartjs.PNG" width="600">
+                    <img class="screenshot" src="./assets/images/chartjs.PNG" width="${chartjsDims[0]}" height="${chartjsDims[1]}">
                 </div>    
-
+                
                 <div class="carousel-item">
                     <div class="project-name-container">
                         <h2>Plan and Do</h2>
                     </div>
-                    <img class="screenshot" src="./assets/images/screenshots/phone delete.png" width="200">
-                </div>    
+                    <img class="screenshot" src="./assets/images/screenshots/phone delete.png" width="${plannerDims[0]}" height="${plannerDims[1]}">
+                </div> 
             </div>
 
             <a class="carousel-control-prev" href="#myCarousel" data-slide="prev" role="button">
@@ -51,8 +54,6 @@ switch (page_id) {
                 <span class="sr-only">Next</span>
             </a>
         </div>
-
-
         `
         break;
     case "plan-and-do":

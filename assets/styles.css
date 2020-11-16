@@ -81,22 +81,30 @@ h2 {
     height: 100%;
 }
 
+.carousel-center .carousel-item {
+    height: 100%;
+}
+
 .carousel-container .carousel-center h2 {
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
-
+/*
 .carousel-container .carousel-center img {
     margin-left: auto;
     margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     display: block;
-}
+}*/
 
 .carousel-center {
     margin-left: auto;
     margin-right: auto;
+    margin: auto;
     width: auto;
+    height: 90%;
 }
 
 .project-name-container {
@@ -148,7 +156,16 @@ h2 {
 }*/
 
 .screenshot {
-    height: 50%;
+    /*height: 50%;
+    margin-top: 12.5%;
+    margin-bottom: 12.5%;
+    */
+    padding: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /*width: 50%;*/ 
+    display: block;
+
 }
 /* width 42.075 % html */
 .project-list {
@@ -260,5 +277,264 @@ h2 {
 }
 
 @media only screen and (max-width: 600px) {
-
+    * {
+        font-family: Helvetica;
+        margin: 0px;
+    }
+    
+    html {
+        width: 100%;
+        height: 100%; 
+        margin: 0px;
+    }
+    
+    /* width 99% html */
+    body {
+        
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    
+    #canvas {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    /*width 406.59px*/
+    h1 {
+        color: white;
+        display: inline-block;
+        margin: auto;
+    
+        /*margin: 0.5%;*/
+        /*margin-left: 8%;
+    */
+        height: 50%;
+    }
+    
+    h2 {
+        color: white;
+    }
+    
+    /* width 99% html */
+    .header-wrapper {
+        width: 100%;
+        min-height: 25%;
+        height: auto;
+        /*padding: 2px;*/
+        /*background-image: radial-gradient(rgb(150, 0, 50), rgb(200, 0, 150));*/
+        border-bottom: white;
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0px;
+        box-sizing: border-box;
+        justify-content: space-around;
+    }
+    /* width 84.15% html */
+    .header-container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+        height: 100%;
+    }
+    
+    .main-content {
+        width: 100%;
+        margin: auto;
+        margin-top: 0px;
+        height: 50%;
+        display: block;
+        background-color: rgb(0, 0, 0, 0.85);
+        
+    }
+    
+    .carousel-container {
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        height: 100%;
+    }
+    
+    .carousel-container .carousel-center h2 {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    .carousel-container .carousel-center img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    .carousel-center {
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+    
+    .project-name-container {
+        display: block;
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+    
+    .footer-wrapper {
+        position: absolute;
+        width: 100%;
+        min-height: 8%;
+        /*padding: 2px;*/
+        /*background-image: radial-gradient(rgb(150, 0, 50), rgb(200, 0, 150));*/
+        border-top: white;
+        border-top-width: 2px;
+        border-top-style: solid;
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+    }
+    
+    .footer-list {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        padding: 0px;
+        list-style-type: none;
+        /*justify-content: space-around;*/
+    }
+    
+    .footer-list li {
+        display: inline-block;
+        color: white;
+        margin-right: auto;
+        margin-left: auto;
+    
+    }
+    
+    /*
+    .header-container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+    }*/
+    
+    .screenshot {
+        height: 50%;
+    }
+    /* width 42.075 % html */
+    .project-list {
+        /*padding: 0px;*/
+        margin: auto;
+        display: inline-block;
+        width: auto;
+        height: 100%;
+        padding-left: 5%;
+        bottom: 0px;
+        /*justify-content: space-around;*/
+    }
+    
+    .project-list li {
+        display: inline-block;
+        color: white;
+        /*padding: 2px;*/
+        width: auto;
+        height: 100%;
+        
+    }
+    
+    .project-list-last {
+        display: inline-block;
+        color: white;
+        font-size: 24px;
+        margin-right: 0% !important;
+    }
+    
+    .project-list-last:hover {
+        display: inline-block;
+        color: white;
+        margin-right: 0% !important;
+        animation: link-animation 0.3s;
+    
+        color: #000; 
+        /*font-weight: bold;*/
+        font-size: 24px;
+        background-color: rgba(255, 255, 255, 0.73);
+        
+    }
+    
+    .selected-link {
+        color: #000 !important; 
+        font-weight: bold;
+    }
+    
+    .project-list li a, .footer-list li a {
+        display: inline-block;
+        font-size: 24px;
+        color: white; 
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        
+        
+    }
+    
+    @keyframes link-animation {
+        from {color: white;
+              font-size: 24px;}
+        to {color: #000;
+            /*font-weight: bold;*/
+            background-color: rgba(255, 255, 255, 0.73);}
+    }
+    
+    .project-list li a:hover, .footer-list li a:hover {
+        color: #000; 
+        /*font-weight: bold;*/
+        font-size: 24px;
+        animation: link-animation;
+        animation-duration: 0.3s;
+    
+        background-color: rgba(255, 255, 255, 0.73);
+        border-radius: 2px 2px 0px 0px;
+        
+        width: 100%;
+    }
+    
+    .footer-list li a:hover {
+        border-radius: 0px 0px 2px 2px !important;
+    }
+    
+    .generic-list {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    
+    .generic-list li {
+        color: white;
+        font-size: 16px;
+        font-weight: normal;
+        margin-bottom: 1%;
+        list-style-type: none;
+    }
+    
+    /*main content text*/
+    .mc-text {
+        font-size: 16px;
+        font-weight: normal;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 } 
